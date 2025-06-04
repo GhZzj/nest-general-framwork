@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/config/db-config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/logger/createRotateTransport.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/logger/logger.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+    <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +15,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GhZzj"
+  }
+}]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7ee4f671-74ea-48fc-a68f-1005866e18b6" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:GhZzj/nest-general-framwork.git",
+    "accountId": "7ee4f671-74ea-48fc-a68f-1005866e18b6"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -41,7 +50,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "vcs.Git",
     "ts.external.directory.path": "D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -73,12 +82,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
-      <workItem from="1748928882978" duration="16471000" />
+      <workItem from="1748928882978" duration="17194000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="VueSettings">
     <option name="innerServiceType" value="DISABLED" />
