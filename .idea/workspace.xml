@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="1">
+      <change afterPath="$PROJECT_DIR$/docker-compose.redis.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/cache/cache.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/filters/all-exception.filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/logger/logger.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/logger/logger.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +54,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Docker.docker-compose.redis.yaml.redis_insight: Compose 部署.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "正在合并 main",
-    "last_opened_file_path": "D:/MyProject/exercise-nest/nest-general-framework/src/common/logger",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/MyProject/exercise-nest/nest-general-framework/src/common/filters",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,12 +73,37 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\filters" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MyProject\exercise-nest\nest-general-framework" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\config" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.redis.yaml.redis_insight: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis_insight" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.redis.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.redis.yaml.redis_insight: Compose 部署" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -84,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
-      <workItem from="1748928882978" duration="17634000" />
+      <workItem from="1748928882978" duration="28488000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
