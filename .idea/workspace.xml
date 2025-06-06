@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/docker-compose.redis.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/cache/cache.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/filters/all-exception.filter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.mongo.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.mysql.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/database.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/mongoose/mongoose.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/user.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/user.schema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/filters/http-exception.filter.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/logger/logger.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/logger/logger.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/config/db-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/db-config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,50 +32,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GhZzj"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GhZzj&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="7ee4f671-74ea-48fc-a68f-1005866e18b6" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:GhZzj/nest-general-framwork.git",
-    "accountId": "7ee4f671-74ea-48fc-a68f-1005866e18b6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:GhZzj/nest-general-framwork.git&quot;,
+    &quot;accountId&quot;: &quot;7ee4f671-74ea-48fc-a68f-1005866e18b6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2xz77d61weZorGgXrlBNwfOKMQ7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Docker.docker-compose.redis.yaml.redis_insight: Compose 部署.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/MyProject/exercise-nest/nest-general-framework/src/common/filters",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "ts.external.directory.path": "D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Docker.docker-compose.redis.yaml.redis_insight: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MyProject/exercise-nest/nest-general-framework&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\MyProject\\exercise-nest\\nest-general-framework\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProject\exercise-nest\nest-general-framework" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\filters" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\logger" />
     </key>
@@ -123,7 +130,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
-      <workItem from="1748928882978" duration="28488000" />
+      <workItem from="1748928882978" duration="64078000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

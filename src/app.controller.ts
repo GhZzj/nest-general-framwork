@@ -1,8 +1,9 @@
-import { Controller, Get, Inject, Logger } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Inject } from "@nestjs/common";
+import { AppService } from "./app.service";
 import { ConfigService } from "@nestjs/config";
-import { InjectRedis } from '@nestjs-modules/ioredis';
-import Redis from 'ioredis';
+import { InjectRedis } from "@nestjs-modules/ioredis";
+import Redis from "ioredis";
+
 
 @Controller()
 export class AppController {
@@ -15,7 +16,5 @@ export class AppController {
 
   @Get()
   async getHello() {
-    const res = await this.redis.get("token")
-    return res
   }
 }
