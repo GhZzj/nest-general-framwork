@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/docker-compose.mongo.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.mysql.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/database.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/mongoose/mongoose.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/user/user.schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/config/db-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/db-config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/typeorm/typeorm.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm-config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +72,7 @@
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\database\typeorm" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework" />
       <recent name="D:\MyProject\exercise-nest\nest-general-framework\src\common\config" />
     </key>
@@ -130,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
-      <workItem from="1748928882978" duration="64078000" />
+      <workItem from="1748928882978" duration="70057000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
