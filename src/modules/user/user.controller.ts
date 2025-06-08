@@ -8,7 +8,8 @@ import { Repository } from 'typeorm';
 import { UserDocument } from '@/modules/user/user.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { PrismaService } from '@/database/prisma/prisma.service';
+import { PrismaService } from "@/database/prisma/prisma.service";
+import { PrismaClient } from '@prisma/client';
 
 @Controller('user')
 export class UserController {
@@ -17,6 +18,9 @@ export class UserController {
   private readonly UserModel: Model<UserDocument>;
   @InjectRepository(User)//注入typeorm的repository
   private userRepository;
+  @Inject('PRISMA_CLIENT')
+  private prisma: PrismaClient;
+
   constructor(private readonly userService: UserService) {}
 
   @Post()
@@ -34,7 +38,7 @@ export class UserController {
       res = await this.UserModel.find();
     }
     if(type == 'prisma'){
-      //res = await this.prisma.user.findMany();
+      res = await this.prisma.user.findMany();
     }
     return res
   }

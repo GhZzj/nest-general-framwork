@@ -26,5 +26,17 @@ export default ()=>({
       password: "123456", //数据库密码
       database:"testdb",//数据库
     }
+  ],
+  prismaDatabases:[
+    {
+      tenant_id: "1", //租户id
+      url: "mysql://root:123456@localhost:3306/testdb", //数据库地址
+    },{
+      tenant_id: "2", //租户id
+      url: "mysql://root:123456@localhost:3307/testdb", //数据库地址
+    },{
+      tenant_id: "3", //租户id
+      url: "postgres://root:123456@localhost:5432/testdb", //数据库地址
+    }
   ]
 })

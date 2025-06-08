@@ -38,8 +38,10 @@
     "mysql2": "^3.14.1",
     "nest-winston": "^1.10.2",
     "pg": "^8.16.0",
+    "prisma-mysql": "file:prisma/clients/mysql",
+    "prisma-postgresql": "file:prisma/clients/postgresql",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1",
+    "rxjs": "^7.8.2",
     "typeorm": "^0.3.24",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0"

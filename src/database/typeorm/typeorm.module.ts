@@ -1,6 +1,6 @@
 import { Global, Module } from '@nestjs/common';
 import { TypeOrmModule as NestTypeormModule} from '@nestjs/typeorm';
-import { TypeormConfigService } from './typeorm-config.service';
+import { TypeormService } from './typeorm.service';
 import { DataSource, DataSourceOptions } from 'typeorm';
 
 const connections = new Map() //存储多租户的连接池
@@ -9,7 +9,7 @@ const connections = new Map() //存储多租户的连接池
 @Module({
   imports: [
     NestTypeormModule.forRootAsync({
-      useClass:TypeormConfigService,
+      useClass:TypeormService,
       dataSourceFactory:async (options:DataSourceOptions)=>{
         const tenant_id = options['tenant_id']
         if(tenant_id&&connections.has(tenant_id)) return connections.get(tenant_id)

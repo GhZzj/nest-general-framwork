@@ -6,4 +6,5 @@ import { MongooseModule } from './mongoose/mongoose.module';
 @Module({
   imports: [PrismaModule, TypeOrmModule, MongooseModule]
 })
+
 export class DatabaseModule {}
