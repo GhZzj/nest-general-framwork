@@ -1,6 +1,5 @@
-import { DynamicModule, Global, Module } from '@nestjs/common';
+import { Global, Module } from '@nestjs/common';
 import { PrismaCoreModule } from '@/database/prisma/prisma-core.module';
-import { PrismaModuleAsyncOptions, PrismaModuleOptions } from '@/database/prisma/prisma-options.interface';
 import { PrismaService } from '@/database/prisma/prisma.service';
 
 @Global()

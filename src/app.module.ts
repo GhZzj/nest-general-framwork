@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from './common/config/config.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
-import { APP_FILTER } from '@nestjs/core';
+import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { LoggerModule } from './common/logger/logger.module';
 import { AllExceptionFilter } from './common/filters/all-exception.filter';
 import { CacheModule } from './common/cache/cache.module';
@@ -14,18 +14,22 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UserSchema } from '@/modules/user/user.schema';
 import { UserModule } from './modules/user/user.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { HttpInterceptor } from './common/interceptors/http.interceptor';
 
 @Global()
 @Module({
-  imports: [DatabaseModule, CommonModule, UserModule],
+  imports: [DatabaseModule, CommonModule, UserModule, AuthModule],
   controllers: [AppController],
-  providers: [AppService,
-    {
+  providers: [AppService,{
       provide:APP_FILTER,
       useClass:AllExceptionFilter
     },{
-    provide:APP_FILTER,
-    useClass:HttpExceptionFilter
+      provide:APP_FILTER,
+      useClass:HttpExceptionFilter
+    },{
+      provide:APP_INTERCEPTOR,
+      useClass:HttpInterceptor
     }],
   exports:[]
 })

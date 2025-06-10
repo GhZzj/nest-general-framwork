@@ -34,7 +34,7 @@ export class PrismaCoreModule implements OnApplicationShutdown {
       }
     }
   }
-
+  
   static forRoot(options:PrismaModuleOptions):DynamicModule
   static forRoot(url:string):DynamicModule
   static forRoot(url:string,connectionName:string):DynamicModule

@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, Query, Inject } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, Inject, UseGuards, Req } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
@@ -10,6 +10,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { PrismaService } from "@/database/prisma/prisma.service";
 import { PrismaClient } from '@prisma/client';
+import { AuthGuard } from '@nestjs/passport';
 
 @Controller('user')
 export class UserController {
@@ -18,7 +19,7 @@ export class UserController {
   private readonly UserModel: Model<UserDocument>;
   @InjectRepository(User)//注入typeorm的repository
   private userRepository;
-  @Inject('PRISMA_CLIENT')
+  @Inject('PRISMA_CLIENT')x
   private prisma: PrismaClient;
 
   constructor(private readonly userService: UserService) {}
@@ -44,8 +45,10 @@ export class UserController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.userService.findOne(+id);
+  @UseGuards(AuthGuard('jwt'))
+  findOne(@Param('id') id: string,@Req() request:any) {
+    console.log(request.user);
+    return "hello"
   }
 
   @Patch(':id')

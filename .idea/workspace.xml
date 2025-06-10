@@ -5,23 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faba8233-05d3-498e-9bfe-4c22b83c7d14" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/prisma/postgres.prisma" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma-core.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma-options.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prisma.constant.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/prisma/prsima.utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/auth/dto/signin-user.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/user/user.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/clients/mysql/edge.js" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/clients/mysql/edge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/clients/mysql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/clients/mysql/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/clients/mysql/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/clients/mysql/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/clients/mysql/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/clients/mysql/schema.prisma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/config/db-config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/config/db-config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/database.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/database.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/filters/all-exception.filter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/filters/all-exception.filter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/prisma/prisma-core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma/prisma-core.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/prisma/prisma.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma/prisma.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/typeorm/typeorm-config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/typeorm/typeorm.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
-      <workItem from="1748928882978" duration="111888000" />
+      <workItem from="1748928882978" duration="123712000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

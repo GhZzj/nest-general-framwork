@@ -1,4 +1,4 @@
-import {ArgumentsHost, Catch, ExceptionFilter, Inject, Logger} from '@nestjs/common';
+import { ArgumentsHost, Catch, ExceptionFilter, HttpException, Inject, Logger } from '@nestjs/common';
 import {WINSTON_MODULE_NEST_PROVIDER} from "nest-winston";
 
 @Catch()
