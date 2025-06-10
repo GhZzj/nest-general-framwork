@@ -8,11 +8,12 @@ import { Repository } from 'typeorm';
 import { UserDocument } from '@/modules/user/user.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { PrismaService } from "@/database/prisma/prisma.service";
 import { PrismaClient } from '@prisma/client';
-import { AuthGuard } from '@nestjs/passport';
+import { AdminGuard } from '@/common/guards/admin.guard';
+import { JwtGuard } from '@/common/guards/jwt.guard';
 
 @Controller('user')
+@UseGuards(JwtGuard,AdminGuard)
 export class UserController {
 
   @InjectModel(User.name)//注入mongoose的model
@@ -45,9 +46,7 @@ export class UserController {
   }
 
   @Get(':id')
-  @UseGuards(AuthGuard('jwt'))
   findOne(@Param('id') id: string,@Req() request:any) {
-    console.log(request.user);
     return "hello"
   }
 

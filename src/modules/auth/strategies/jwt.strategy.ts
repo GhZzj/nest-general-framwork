@@ -16,7 +16,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     }
 
     async validate(payload: any,request:Request) {
-        console.log(payload);
+        //console.log(payload);
         //给request添加user属性
         request.user = payload;
         return payload;
