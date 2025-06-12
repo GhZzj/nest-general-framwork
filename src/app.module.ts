@@ -1,7 +1,6 @@
 import { Global, Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
 import { AllExceptionFilter } from './common/filters/all-exception.filter';
 import { DatabaseModule } from './database/database.module';
@@ -16,9 +15,6 @@ import { FeaturesModule } from './modules/features.module';
   providers: [AppService,{
       provide:APP_FILTER,
       useClass:AllExceptionFilter
-    },{
-      provide:APP_FILTER,
-      useClass:HttpExceptionFilter
     },{
       provide:APP_INTERCEPTOR,
       useClass:HttpInterceptor

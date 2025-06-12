@@ -13,7 +13,11 @@ async function bootstrap() {
   app.enableShutdownHooks()
   //全局类验证管道
   app.useGlobalPipes(new ValidationPipe({
-    whitelist:true //去除类上不存在的字段
+    whitelist:true, //去除类上不存在的字段
+    transform:true, //将请求参数转换为dto对象
+    transformOptions:{
+      enableImplicitConversion:true //允许隐式转换
+    }
   }))
   const configService = app.get(ConfigService);
   await app.listen(configService.get('PORT') as number);

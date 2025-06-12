@@ -21,6 +21,7 @@
       <change beforePath="$PROJECT_DIR$/src/database/prisma/prisma-core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma/prisma-core.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/prisma/prisma.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/user/user.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +92,9 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.redis.yaml.redis_insight: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -132,6 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748928882063</updated>
       <workItem from="1748928882978" duration="123712000" />
+      <workItem from="1749531081714" duration="1783000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />

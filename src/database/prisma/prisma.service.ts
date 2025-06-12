@@ -12,8 +12,9 @@ export class PrismaService implements PrismaOptionsFactory {
     | PrismaModuleOptions
     | Promise<PrismaModuleOptions> {
     let dbConfig = this.configService.get('prismaDatabases');
-    let tenantId = this.request.headers['x-tenant-id']
+    let tenantId =1 //this.request.headers['x-tenant-id']
     dbConfig = dbConfig.find(item => item.tenant_id == tenantId)
+    return dbConfig
     if(!dbConfig)throw new HttpException(`未找到租户${tenantId}的数据库配置`,404)
     return dbConfig
   }

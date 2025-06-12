@@ -17,9 +17,14 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prisma:db:push": "prisma db push --schema=./prisma/dbs/mysql/mysql.prisma",
+    "prisma:db:generate": "prisma generate --schema=./prisma/dbs/mysql/mysql.prisma",
+    "prisma:db:migrate": "prisma migrate dev --schema=./prisma/dbs/mysql/mysql.prisma",
+    "prisma:db:reset": "prisma migrate reset --schema=./prisma/dbs/mysql/mysql.prisma"
   },
   "dependencies": {
+    "@casl/ability": "^6.7.3",
     "@nestjs-modules/ioredis": "^2.0.2",
     "@nestjs/cache-manager": "^3.0.1",
     "@nestjs/common": "^11.0.1",
@@ -48,6 +53,7 @@
     "prisma-mysql": "file:prisma/clients/mysql",
     "prisma-postgresql": "file:prisma/clients/postgresql",
     "reflect-metadata": "^0.2.2",
+    "request-ip": "^3.3.0",
     "rxjs": "^7.8.2",
     "typeorm": "^0.3.24",
     "winston": "^3.17.0",
