@@ -9,10 +9,12 @@ import { HttpInterceptor } from './common/interceptors/http.interceptor';
 import { FeaturesModule } from './modules/features.module';
 import { UtilsModule } from './utils/utils.module';
 import { SshModule } from './utils/ssh/ssh.module';
+import { IntegrationsModule } from './integrations/integrations.module';
+import { UploadModule } from './upload/upload.module';
 
 @Global()
 @Module({
-  imports: [DatabaseModule, CommonModule, FeaturesModule, UtilsModule,
+  imports: [DatabaseModule, CommonModule, FeaturesModule, UtilsModule, IntegrationsModule, UploadModule,
    /* SshModule.forRootAsync({
       useFactory: () => ({
         username:"root",
