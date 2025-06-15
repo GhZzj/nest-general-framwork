@@ -64,3 +64,35 @@ pnpm start:dev
 - Redis: http://localhost:5540 (RedisInsight)
 
 ## 项目结构
+
+### 核心目录结构
+
+```
+src/
+  access-control/       # 访问控制模块（用户、角色、权限管理）
+  common/               # 公共组件（缓存、配置、装饰器、过滤器等）
+  database/             # 数据库集成（Prisma、Mongoose、TypeORM）
+  modules/              # 业务功能模块
+  app.controller.ts     # 根控制器
+  app.module.ts         # 根模块
+  app.service.ts        # 根服务
+  main.ts               # 应用入口
+prisma/
+  clients/              # 不同数据库的Prisma客户端
+  dbs/                  # 数据库模式定义
+```
+
+## 功能模块说明
+
+### 访问控制模块
+提供用户、角色、权限的CRUD操作及动态权限验证，通过`@UseGuards(PermissionGuard)`装饰器实现接口级权限控制。
+
+### 公共缓存模块
+基于Redis实现分布式缓存，提供`CacheService`服务类，支持`get`/`set`/`del`等基础操作及自动过期功能。
+
+## 配置示例
+
+### 数据库切换（以MySQL→PostgreSQL为例）
+1. 修改`.env.development`中的数据库连接字符串：
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/dbname?schema=public
