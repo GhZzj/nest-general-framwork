@@ -1,8 +1,8 @@
 import { ConflictException, Inject, Injectable, UnauthorizedException } from '@nestjs/common';
-import { UserRepository } from '@/modules/user/user.repository';
-import { SigninUserDto } from '@/modules/auth/dto/signin-user.dto';
 import { JwtService } from '@nestjs/jwt';
 import * as argon2 from "argon2"
+import { UserRepository } from '../user/user.repository';
+import { SigninUserDto } from './dto/signin-user.dto';
 
 @Injectable()
 export class AuthService {
@@ -19,7 +19,7 @@ export class AuthService {
     if(!isPasswordValid) throw new UnauthorizedException('用户密码错误')
     const payload = { userId: user.id, username: user.username }
     return {
-      access_token: this.jwtService.sign(payload),
+      access_token: await this.generateToken(payload),
     }
   }
   
@@ -30,4 +30,9 @@ export class AuthService {
     }
     return this.userRepository.create(dto)
   }
+
+  async generateToken(generateUserInfo:{userId:number,username:string}){
+    return this.jwtService.sign(generateUserInfo)
+  }
+
 }

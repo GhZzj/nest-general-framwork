@@ -1,14 +1,16 @@
 import { Module } from '@nestjs/common';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
-import { UserModule } from '@/modules/user/user.module';
 import { PassportModule } from '@nestjs/passport';
 import { JwtModule } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import { JwtStrategy } from './strategies/jwt.strategy';
+import { UserModule } from '../user/user.module';
+import { GithubStrategy } from './strategies/github.strategy';
+import { GoogleStrategy } from './strategies/google.strategy';
 
 @Module({
-  imports: [UserModule, PassportModule, JwtModule.registerAsync({
+  imports: [UserModule, JwtModule.registerAsync({
     inject: [ConfigService],
     useFactory:async (configService:ConfigService) => ({
       secret: configService.get('JWT_SECRET'),
@@ -16,6 +18,6 @@ import { JwtStrategy } from './strategies/jwt.strategy';
     }),
   })],
   controllers: [AuthController],
-  providers: [AuthService,JwtStrategy]
+  providers: [AuthService,JwtStrategy,GithubStrategy,GoogleStrategy]
 })
 export class AuthModule {}

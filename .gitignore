@@ -3,6 +3,8 @@
 /node_modules
 /build
 node_modules/
+/uploads
+/MinioData
 
 # Logs
 logs

@@ -8,6 +8,6 @@ import { RedisModule } from '@nestjs-modules/ioredis';
     options:{
       db:0
     }
-  })]
+  })],
 })
 export class CacheModule {}

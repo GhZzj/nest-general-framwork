@@ -10,11 +10,11 @@ import { FeaturesModule } from './modules/features.module';
 import { UtilsModule } from './utils/utils.module';
 import { SshModule } from './utils/ssh/ssh.module';
 import { IntegrationsModule } from './integrations/integrations.module';
-import { UploadModule } from './upload/upload.module';
+import { AccessControlModule } from './access-control/access-control.module';
 
 @Global()
 @Module({
-  imports: [DatabaseModule, CommonModule, FeaturesModule, UtilsModule, IntegrationsModule, UploadModule,
+  imports: [DatabaseModule, CommonModule, FeaturesModule, UtilsModule, IntegrationsModule,AccessControlModule
    /* SshModule.forRootAsync({
       useFactory: () => ({
         username:"root",

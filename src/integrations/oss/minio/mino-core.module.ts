@@ -1,7 +1,9 @@
 import { DynamicModule, Global, Module, Provider, Type } from "@nestjs/common";
 import { MinioModuleAsyncOptions, MinioModuleOptions, MinioOptionsFactory } from "./minio.interface";
 import * as Minio from 'minio';
-import { MINIO_CLIENT, MINIO_OPTIONS } from "./minio.constant";
+import { MINIO_CLIENT, MINIO_CLIENTS, MINIO_OPTIONS } from "./minio.constant";
+
+const minioClients = new Map<string, Minio.Client>();
 
 @Global()
 @Module({})
@@ -28,18 +30,28 @@ export class MinioCoreModule {
         const {clientName,...minOptions} = options;
         const providerName = options.clientName||MINIO_CLIENT;
         const optionsProvider = this.createAsyncOptionsProvider(minOptions);
+        
         const clientProvider ={
             provide: providerName,
             useFactory: (options:MinioModuleOptions) => {
+                const clientKey= options.endPoint + options.port + options.region
+                if(minioClients.has(clientKey))return minioClients.get(clientKey);
                 const client = new Minio.Client(options);
+                minioClients.set(clientKey,client);
                 return client;
             },
             inject: [MINIO_OPTIONS]
         }
+
+        const minioClientsProvider = {
+            provide: MINIO_CLIENTS,
+            useFactory: () => minioClients,
+            inject: []
+        }
         return {
             module: MinioCoreModule,
-            providers: [...optionsProvider,clientProvider],
-            exports: [clientProvider]
+            providers: [...optionsProvider,clientProvider,minioClientsProvider],
+            exports: [clientProvider,minioClientsProvider]
         }
     }
 

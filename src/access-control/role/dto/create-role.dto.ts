@@ -1,4 +1,4 @@
-import { CreatePermissionDto } from '@/modules/permission/dto/create-permission.dto';
+import { CreatePermissionDto } from '@/access-control/permission/dto/create-permission.dto';
 import { Type } from 'class-transformer';
 import { IsNotEmpty, IsString, IsOptional, IsArray, ValidateNested } from 'class-validator';
 

@@ -1,4 +1,4 @@
-import { UserRepository } from '@/modules/user/user.repository';
+import { UserRepository } from '@/access-control/user/user.repository';
 import { CanActivate, ExecutionContext, Inject, Injectable, UnauthorizedException } from '@nestjs/common';
 import { Observable } from 'rxjs';
 

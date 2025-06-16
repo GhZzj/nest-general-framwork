@@ -1,20 +1,36 @@
-import { Body, Controller, FileTypeValidator, Inject, MaxFileSizeValidator, ParseFilePipe, Post, Query, UploadedFile, UseGuards, UseInterceptors } from '@nestjs/common';
+import { Body, Controller, Inject, MaxFileSizeValidator, ParseFilePipe, Post, Query, UploadedFile, UseGuards, UseInterceptors } from '@nestjs/common';
 import { UploadService } from './upload.service';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { destinationPath, storage } from './upload.storage';
+import { storage } from './upload.storage';
 import { MINIO_CLIENT } from '@/integrations/oss/minio/minio.constant';
 import  * as Minio from 'minio';
 import multer from 'multer';
 import { RateLimit, RateLimitType } from '@/common/decorators/rate-limit.decorator';
-import { RateLimitGuard } from '@/common/guards/rate-limit.guard';
+import { ALIYUN_OSS_CLIENT } from '@/integrations/oss/aliyun-oss/aliyun-oss.constant';
+import OSS from 'ali-oss';
 
 @Controller('upload')
 export class UploadController {
   @Inject(MINIO_CLIENT)
   private readonly minioClient: Minio.Client
   constructor(private readonly uploadService: UploadService) {}
+  @Inject(ALIYUN_OSS_CLIENT)
+  private readonly aliyunOssClient: OSS
 
-
+  @Post('aliyun')
+  @UseInterceptors(FileInterceptor('file', {
+    storage: multer.memoryStorage(),
+  }))
+  async uploadAliyun(@UploadedFile() file: Express.Multer.File) {
+    const objectName = Date.now() + '-' + Math.round(Math.random() * 1E9) + '-' + file.originalname;
+    // 将 Buffer 转换为可读流
+    const readableStream = new (require('stream').Readable)();
+    readableStream.push(file.buffer); // 推送 Buffer 到流中
+    readableStream.push(null); // 标记流结束
+    const res = await this.aliyunOssClient.putStream(objectName, readableStream);
+    return res;
+  }
+  
   /**
    * 生成预签名上传URL（限制上传权限）而且前端可以直接使用该URL上传文件到OSS
    * @param objectName 前端指定的文件对象名（或后端生成唯一名称）
