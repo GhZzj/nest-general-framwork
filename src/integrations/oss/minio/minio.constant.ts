@@ -1,5 +1,0 @@
-export const MINIO_CLIENT="MINIO_CLIENT"
-
-export const MINIO_OPTIONS = "MINIO_OPTIONS"
-
-export const MINIO_CLIENTS="MINIO_CLIENTS"
