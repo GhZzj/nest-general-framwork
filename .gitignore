@@ -63,3 +63,4 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 /node_modules/
 
 /generated/prisma
+MinioData/.minio.sys/buckets/.usage-cache.bin.bkp/xl.meta
