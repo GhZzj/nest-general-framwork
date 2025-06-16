@@ -1,0 +1,15 @@
+# MinIO 对象存储服务 Docker 配置文件
+# 版本声明（注释掉的版本号，实际使用默认的 Compose 文件格式版本）
+#version: '3.3'
+services:
+  # MinIO 核心服务
+  minio:
+      image: bitnami/minio:latest
+      ports:
+        - 9000:9000
+        - 9001:9001
+      environment:
+        - MINIO_ROOT_USER=minio-root-user
+        - MINIO_ROOT_PASSWORD=minio-root-password
+      volumes:
+        - ./MinioData:/bitnami/minio/data
